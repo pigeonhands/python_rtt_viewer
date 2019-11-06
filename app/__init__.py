@@ -57,7 +57,7 @@ def process_commands():
         if c == 's': #stopwatch
             if sw.running:
                 sw.stop()
-                to_console(">Stopwatch stopped. {}mss elapsed".format(sw.elapsed_ms))
+                to_console(">Stopwatch stopped. {}ms elapsed".format(sw.elapsed_ms))
             else:
                 sw.start()
                 to_console(">Stopwatch started")
